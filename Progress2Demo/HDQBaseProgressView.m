@@ -14,6 +14,7 @@
         self.backgroundColor = ProgressViewBackgroundColor;
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;
+        self.progress = 0;
     }
     return self;
 }

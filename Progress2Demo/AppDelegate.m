@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ViewController *VC = [[ViewController alloc] init];
+    VC.view.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:VC];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

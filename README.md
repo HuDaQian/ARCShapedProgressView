@@ -4,6 +4,15 @@
 
 ![image](https://github.com/HuDaQian/ARCShapedProgressView/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE.gif)
 
+##更新信息
+2016-8-5
+
+1.删除了main.sb，低版本xcode的小伙伴可以看了
+
+2.修改了实现方法，更容易的使用了
+
+3.增加了参数判断，如果小伙伴们不知道需要传什么参数的话，可以先传0传nil来看下效果
+
 ###使用方法
 
 
