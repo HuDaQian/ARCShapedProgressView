@@ -18,7 +18,11 @@
  *version:0.0.3
  *newFeature:
  *1.U can give 0 or nil for create view.
- *2.
+ *
+ *version:0.1.0
+ *newFeature:
+ *1.Add a Method to change endProgress.
+ *2.Change the timer method.
  *
  *nextStep:Label.
  */
@@ -48,5 +52,8 @@ typedef void(^ChangeAgain)();
 
 ///设定指示图片
 - (void)setLeadImage:(UIImage *)image andSize:(CGSize)size;
+
+///设定新的终点
+- (void)changeEndProgress:(CGFloat)newEndProgress;
 
 @end

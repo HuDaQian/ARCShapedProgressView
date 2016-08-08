@@ -17,10 +17,8 @@
 
 @property (nonatomic, assign) CGFloat progress;
 
-- (void)setCenterProgressText:(NSString *)text withAttributes:(NSDictionary *)attributes;
-
-- (void)dismiss;
-
 + (id)progressView;
+- (void)setCenterProgressText:(NSString *)text withAttributes:(NSDictionary *)attributes;
+- (void)dismiss;
 
 @end

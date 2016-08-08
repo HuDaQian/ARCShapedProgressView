@@ -50,7 +50,7 @@
         _endProgress = 1;
         self.backgroundColor = [UIColor clearColor];
         
-        timer1 = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(progressSimulation:) userInfo:self repeats:YES];
+        timer1 = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(progressSimulation:) userInfo:self repeats:YES];
 
     }
     return self;
@@ -164,6 +164,18 @@
     }
 }
 
+- (void)changeEndProgress:(CGFloat)newEndProgress {
+    if (timer1.isValid) {
+        //计时器还存在的时候
+        [timer1 invalidate];
+    } else {
+        //计时器不存在的时候
+    }
+    self.progress = 0;
+    _endProgress = newEndProgress;
+    timer1 = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(progressSimulation:) userInfo:self repeats:YES];
+}
+
 #pragma mark - privateMethod
 - (void)progressSimulation:(id)sender {
     if (_endProgress == 0) {
@@ -172,7 +184,7 @@
     if (self.progress > 1) {
         
     } else {
-        self.progress += 0.01;
+        self.progress += 0.001;
     }
     if (self.progress > _endProgress) {
         [timer1 invalidate];

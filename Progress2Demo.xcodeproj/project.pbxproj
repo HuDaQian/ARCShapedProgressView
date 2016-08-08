@@ -86,13 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		188B55B31D542D740070DAFA /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tool;
-			sourceTree = "<group>";
-		};
 		18F42A401D4F1DDD008B6418 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +109,6 @@
 		18F42A4B1D4F1DDD008B6418 /* Progress2Demo */ = {
 			isa = PBXGroup;
 			children = (
-				188B55B31D542D740070DAFA /* Tool */,
 				18F42A7F1D4F1DE9008B6418 /* Source */,
 				18F42A4F1D4F1DDE008B6418 /* AppDelegate.h */,
 				18F42A501D4F1DDE008B6418 /* AppDelegate.m */,
