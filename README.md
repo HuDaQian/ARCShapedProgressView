@@ -7,6 +7,7 @@
 ##更新信息
 2016-8-8
 1.增加了修改最终进度的方法
+
 2.修改了计时器方法，使得特殊数字也能正常显示了
 
 2016-8-5
@@ -20,7 +21,7 @@
 ###使用方法
 
 
-####//初始化的时候选择起始位置以及结束位置 后面参数是否反向指的是是否顺时针显示进度
+####//初始化的时候选择起始位置以及结束位置 还有两条线的间距 后面参数是否反向指的是是否顺时针显示进度
 
 
     _progressView = [[HDQCircleProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200) start:M_PI_2 end:M_PI_4 andDistanse:15 isReverse:NO andEndProgress:1];
