@@ -104,11 +104,11 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     //    CGContextAddArc(ctx, self.frame.size.width/2, self.frame.size.height/2, radius, M_PI_4*3, M_PI_4, 0);
     
-//    if (_isReverse) {
-//        CGContextAddArc(ctx, self.frame.size.width/2, self.frame.size.height/2, radius, _endPosition, _startPosition, 0);
-//        } else {
+    if (_isReverse) {
+        CGContextAddArc(ctx, self.frame.size.width/2, self.frame.size.height/2, radius, _endPosition, _startPosition, 0);
+        } else {
     CGContextAddArc(ctx, self.frame.size.width/2, self.frame.size.height/2, radius, _startPosition, _endPosition, (int)_isReverse);
-//        }
+        }
 
     [_unfilledColor setStroke];
     CGContextSetLineWidth(ctx, _lineWidth);

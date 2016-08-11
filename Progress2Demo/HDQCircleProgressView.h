@@ -24,6 +24,9 @@
  *1.Add a Method to change endProgress.
  *2.Change the timer method.
  *
+ *关于参数中isReverse的说明:
+ *当设定了起点和终点之后，起点终点是不会变的，正反向仅仅代表顺逆时针。
+ *
  *nextStep:Label.
  */
 

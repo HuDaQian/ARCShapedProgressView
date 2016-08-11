@@ -40,7 +40,7 @@
     progressBackgroundView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:progressBackgroundView];
 
-    _progressView = [[HDQCircleProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200) start:M_PI_2 end:M_PI_4 andDistanse:15 isReverse:NO andEndProgress:1];
+    _progressView = [[HDQCircleProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200) start:0 end:M_PI*7/4 andDistanse:15 isReverse:YES andEndProgress:1];
     [_progressView setBackColor:[UIColor yellowColor] foreColor:[UIColor redColor]];
 //    [progressView setLeadImage:[UIImage imageNamed:@"蓝色"] andSize:CGSizeMake(24, 24)];
     [progressBackgroundView addSubview:_progressView];
